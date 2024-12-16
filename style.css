@@ -1,0 +1,28 @@
+body {
+    overflow: hidden;
+}
+
+.bubble {
+    width: 70px;
+    position: absolute;
+
+    animation-name: goUp;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+}
+@keyframes goUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1500px);
+    }
+}
+* {
+    user-select: none;
+  }
+  img {
+    user-select: none;  
+    -webkit-user-drag: none;  
+    pointer-events: auto;  
+  }
